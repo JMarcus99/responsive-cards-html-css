@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main.cards {
+  display: flex;
+  margin-top: 25rem;
+  padding: 32px;
+  height: 20rem;
+  background-color: #e8e7e7;
+  border-radius: 1rem;
+}
+section.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  max-height: 256px;
+  margin-left: 32px;
+}
+section.card:first-child {
+  margin-left: 0;
+}
+.icons {
+  font-size: 3rem;
+}
+.card.twit {
+  background-color: #00acee;
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+.fa-youtube {
+  color: red;
+}
+section.card h3 {
+  margin: 16px 0;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: white;
+}
+section.card.insta button {
+  background-color: #0000009b;
+  color: white;
+}
+section.card.youtube button {
+  background: linear-gradient(to right, red, #fc9292);
+}
+section.card.twit button {
+  background-color: white;
+  color: #00acee;
+}
+section.card.insta {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    box-shadow: 20px 20px 50px -30px #bc1888;
+    color: white;
+}
+section.card.youtube {
+  box-shadow: 20px 20px 50px -30px red;
+}
+section.card.twit {
+  box-shadow: 20px 20px 50px -30px #00acee;
+}
+
+@media screen and (max-width: 720px){
+  body {
+    background-color: #e8e7e7;
+  }
+  main.cards {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  section.card:last-child {
+    margin-bottom: 0;
+  }
+  screen.card button {
+    font-size: 70%;
+  }
+}
+
